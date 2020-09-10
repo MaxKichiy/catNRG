@@ -146,7 +146,11 @@
         Затраты на питание: 15 000 руб.
       </div>
       <div class="example-page__picture">
-        <img src="./src/assets/before-mobile.png" alt="До программы">
+        <picture>
+          <source media="(min-width: 768px)" srcset="./src/assets/before-desktop.png">
+          <img src="./src/assets/before-mobile.png" alt="До программы">
+        </picture>
+        <img class="example-page__picture--after" src="./src/assets/after-desktop.png">
 
         <div class="example-page__picture-toggles picture-toggles">
           <p class="picture-toggle picture-toggle--before">Было</p>
