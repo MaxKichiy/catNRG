@@ -83,3 +83,43 @@
   line-height: 16px;
   margin-top: 20px;
 }
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    width: auto;
+  }
+  .page-footer__wrapper--top {
+    width: 708px;
+    background-color: #f2f2f2;
+  }
+  .page-footer__title {
+    width: 200px;
+    padding: 60px 0;
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .page-footer__adress {
+    width: 170px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .footer-map {
+    width: auto;
+    height: 400px;
+  }
+  .page-footer__wrapper--bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .page-footer__logo {
+    padding: 30px 0;
+  }
+  .page-footer__socials {
+    margin-top: 20px;
+    padding: 30px 0;
+  }
+  .footer__title--bottom {
+    padding: 30px 0;
+  }
+}
