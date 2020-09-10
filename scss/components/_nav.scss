@@ -1,3 +1,5 @@
+@import '../variables.scss';
+
 .main-nav {
   width: 320px;
   // margin: 0 auto;
@@ -24,5 +26,19 @@
   a {
     color: #000;
     text-decoration: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav {
+    width: 516px;
+  }
+  .main-nav__wrapper {
+    width: 516px;
+    margin-left: 75px;
+  }
+  .site-list__item {
+    margin-right: 35px;
+    border-bottom: none;
   }
 }
