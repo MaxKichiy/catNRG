@@ -246,6 +246,73 @@ img {
 .program-example__arrow {
   margin-left: 10px; }
 
+@media (min-width: 768px) {
+  .page-main {
+    width: auto;
+    background-image: none; }
+  .page-main__wrapper {
+    min-height: 860px;
+    width: 708px;
+    background-image: none;
+    background-image: url("../../src/assets/index-can-tablet.jpg");
+    background-position: 0 200px;
+    background-repeat: no-repeat;
+    z-index: -1; }
+  .page-main__title {
+    color: #000000;
+    width: 427px;
+    font-size: 60px;
+    text-align: left;
+    line-height: 60px;
+    margin-left: 90px; }
+  .page-main__text {
+    color: #000000;
+    text-align: left;
+    margin-left: 90px;
+    font-size: 20px;
+    line-height: 20px; }
+  .page-main__button.button {
+    width: 245px;
+    margin: 0;
+    margin-left: 90px;
+    font-size: 20px;
+    line-height: 20px;
+    margin-top: 45px; }
+  .program-example--shrink {
+    margin-top: 570px; }
+  .page-main__program {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 75px 60px 60px 40px; }
+  .program-example__title {
+    width: 300px;
+    font-size: 36px;
+    line-height: 36px;
+    margin: 0; }
+  .program-example__img {
+    order: 2;
+    width: 200px;
+    height: 200px;
+    margin-top: -30px; }
+  .program-example__text {
+    box-sizing: content-box;
+    margin: 0;
+    margin-top: 30px;
+    width: 380px;
+    order: 1;
+    align-self: flex-start;
+    border: none; }
+  .program-example__link {
+    order: 3; }
+  .program-example__arrow {
+    order: 3; }
+  .program-example__link {
+    font-size: 20px;
+    line-height: 20px;
+    margin-left: 0; }
+  .program-example__arrow {
+    height: 30px; } }
+
 .button {
   width: 100%;
   padding: 13px 0;
@@ -292,6 +359,34 @@ img {
   width: 200px;
   font-family: 'Arial';
   color: #444444; }
+
+@media (min-width: 768px) {
+  .faq-page {
+    width: auto;
+    border-bottom: 1px solid #e6e6e6; }
+  .faq-page__wrapper {
+    width: 708px; }
+  .faq-page__title {
+    font-size: 60px;
+    line-height: 60px; }
+  .faq-page__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-right: 80px; }
+  .faq-list__item {
+    position: relative;
+    width: 250px;
+    padding: 60px 0; }
+    .faq-list__item span {
+      font-size: 281px;
+      position: absolute;
+      bottom: 90px;
+      right: 40px;
+      color: #f2f2f2;
+      z-index: -1; }
+  .faq-list__item-text {
+    margin-top: 30px; } }
 
 .example-page {
   width: 320px;

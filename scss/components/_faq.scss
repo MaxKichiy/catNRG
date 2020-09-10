@@ -1,3 +1,5 @@
+@import '../variables.scss';
+
 .faq-page {
   width: 320px;
   margin: 0 auto;
@@ -35,4 +37,40 @@
   width: 200px;
   font-family: 'Arial';
   color: #444444;
+}
+
+@media (min-width: $tablet-width) {
+  .faq-page {
+    width: auto;
+    border-bottom: 1px solid #e6e6e6;
+  }
+  .faq-page__wrapper {
+    width: 708px;
+  }
+  .faq-page__title {
+    font-size: 60px;
+    line-height: 60px;
+  }
+  .faq-page__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-right: 80px;
+  }
+  .faq-list__item {
+    position: relative;
+    width: 250px;
+    padding: 60px 0;
+    span {
+      font-size: 281px;
+      position: absolute;
+      bottom: 90px;
+      right: 40px;
+      color: #f2f2f2;
+      z-index: -1;
+    }
+  }
+  .faq-list__item-text {
+    margin-top: 30px;
+  }
 }
