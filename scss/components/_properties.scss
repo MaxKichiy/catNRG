@@ -1,0 +1,80 @@
+@import '../variables.scss';
+
+.properties {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.properties__item {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 125px;
+  height: 55px;
+  vertical-align: middle;
+  text-align: center;
+  // padding: 16px 42px;
+
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
+
+  border: 1px solid #000;
+  border-radius: 3px;
+  text-align: center;
+}
+.properties__item-text {
+  position: absolute;
+  width: 65px;
+  bottom: -13px;
+  padding: 0 10px;
+  text-transform: lowercase;
+  text-align: center;
+  font-size: 12px;
+  line-height: 12px;
+  color: $text-color;
+  background-color: $bg-grey;
+}
+.example-page__slogan {
+  font-size: 14px;
+  line-height: 20px;
+  margin-top: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.example-page__properties {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.example-page__picture {
+  margin-top: 40px;
+}
+.example-page__picture-toggles {
+  display: flex;
+  text-transform: uppercase;
+  font-size: 16px;
+  align-items: center;
+  justify-content: space-between;
+  width: 200px;
+  margin: 0 auto;
+  .picture-toggles__field {
+    position: relative;
+    min-width: 85px;
+    height: 14px;
+    border: 1px solid #cdcdcd;
+    background-color: #ffffff;
+    border-radius: 5px;
+    &::before {
+      content: '';
+      position: absolute;
+      top: 3px;
+      left: 3px;
+      width: 35px;
+      height: 6px;
+      background-color: #68b738;
+      border-radius: 5px;
+    }
+  }
+}

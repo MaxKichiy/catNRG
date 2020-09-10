@@ -1,0 +1,38 @@
+.faq-page {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.faq-page__wrapper {
+  width: 280px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+.faq-page__title {
+  margin-top: 30px;
+  font-size: 36px;
+  font-weight: normal;
+  margin-bottom: 30px;
+}
+
+.faq-list__item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.faq-list__item-image {
+  width: 60px;
+  height: 60px;
+  padding: 15px;
+  background-color: #68b738;
+  margin-right: 20px;
+}
+.faq-list__item-text {
+  font-size: 14px;
+  line-height: 18px;
+  width: 200px;
+  font-family: 'Arial';
+  color: #444444;
+}

@@ -59,6 +59,10 @@
   text-transform: uppercase;
 }
 .program-example__text {
+  font-family: 'Arial';
+  color: #444444;
+  font-size: 14px;
+  line-height: 18px;
   padding-bottom: 20px;
   margin: 20px 20px;
   margin-bottom: 0;
@@ -66,6 +70,7 @@
 }
 
 .program-example__link {
+  font-size: 16px;
   padding: 10px 0;
   position: relative;
   color: #000;
