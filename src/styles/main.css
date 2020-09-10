@@ -1,0 +1,215 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  outline: none;
+  box-sizing: border-box; }
+
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; }
+
+body {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased; }
+
+h1 {
+  font-size: 48px; }
+
+h2 {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 30px; }
+
+a {
+  text-decoration: none; }
+
+body {
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  line-height: 27px;
+  font-family: 'Oswald', sans-serif;
+  color: #000000;
+  font-style: normal;
+  background-color: #fff; }
+
+img {
+  height: auto; }
+
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  bottom: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  clip-path: inset(100%);
+  overflow: hidden; }
+
+.page-header {
+  width: 320px;
+  margin: 0 auto;
+  position: relative; }
+
+.page-logo__wrapper {
+  width: 280px;
+  margin: 0 auto; }
+
+.page-header__wrapper {
+  vertical-align: middle;
+  width: 280px;
+  margin: 0 auto;
+  min-height: 65px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline; }
+
+.page-header__logo {
+  width: 200px;
+  height: 65px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center; }
+
+.main-nav__button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  display: block;
+  width: 70px;
+  height: 50px;
+  cursor: pointer;
+  border: none;
+  background-color: #fff; }
+
+.main-nav--closed .main-nav__button::before {
+  content: '';
+  position: absolute;
+  top: 24px;
+  right: 20px;
+  width: 24px;
+  height: 2px;
+  background-color: #000;
+  box-shadow: 0 8px 0 0 #000, 0 16px 0 0 #000; }
+
+.main-nav {
+  width: 320px; }
+
+.main-nav__wrapper {
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  width: 280px;
+  margin: 0 auto; }
+
+.site-list__item {
+  font-size: 20px;
+  line-height: 20px;
+  padding: 23px 0;
+  vertical-align: middle;
+  border-bottom: 1px solid #e6e6e6;
+  border-left: none;
+  border-right: none; }
+  .site-list__item:first-of-type {
+    border-top: 1px solid #e6e6e6; }
+  .site-list__item a {
+    color: #000;
+    text-decoration: none; }
+
+.page-main {
+  width: 320px;
+  margin: 0 auto;
+  background-image: url("../../src/assets/index-background-mobile.png");
+  background-repeat: no-repeat;
+  background-position: 0 0; }
+
+.page-main__wrapper {
+  margin: 0 auto;
+  width: 280px;
+  background-image: url("../../src/assets/index-can-mobile.png");
+  background-repeat: no-repeat;
+  background-position: 0 170px; }
+
+.page-main__title {
+  padding-top: 25px;
+  font-size: 36px;
+  color: #ffffff;
+  font-weight: normal;
+  line-height: 36px;
+  text-align: center; }
+
+.page-main__text {
+  padding-top: 18px;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  text-align: center; }
+
+.page-main__button {
+  margin-top: 300px; }
+
+.page-main__program {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 25px;
+  padding-top: 22px;
+  background-color: #f2f2f2; }
+
+.program-example__img {
+  margin-left: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #68b738;
+  transform: scaleX(1); }
+
+.program-example__title {
+  margin-left: 20px;
+  font-size: 24px;
+  text-transform: uppercase; }
+
+.program-example__text {
+  padding-bottom: 20px;
+  margin: 20px 20px;
+  margin-bottom: 0;
+  border-bottom: 1px solid #d9d9d9; }
+
+.program-example__link {
+  padding: 10px 0;
+  position: relative;
+  color: #000;
+  margin-left: 20px;
+  text-transform: uppercase;
+  text-decoration: none; }
+  .program-example__link::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url("../../src/assets/arrow-right.svg");
+    background-position: 0 0; }
+
+.program-example__arrow {
+  margin-left: 10px; }
+
+.button {
+  width: 100%;
+  padding: 13px 0;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  font-family: 'Oswald';
+  color: #ffffff;
+  background-color: #68b738;
+  border: none; }
+
+/*# sourceMappingURL=main.css.map */

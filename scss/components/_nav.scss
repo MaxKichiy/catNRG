@@ -1,0 +1,28 @@
+.main-nav {
+  width: 320px;
+  // margin: 0 auto;
+}
+.main-nav__wrapper {
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  width: 280px;
+  margin: 0 auto;
+}
+.site-list__item {
+  font-size: 20px;
+  line-height: 20px;
+  // height: 65px;
+  padding: 23px 0;
+  vertical-align: middle;
+  border-bottom: 1px solid #e6e6e6;
+  border-left: none;
+  border-right: none;
+  &:first-of-type {
+    border-top: 1px solid #e6e6e6;
+  }
+  a {
+    color: #000;
+    text-decoration: none;
+  }
+}
