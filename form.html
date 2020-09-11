@@ -11,28 +11,34 @@
 
 <body>
   <header class="page-header">
-    <a href="#" class="page-header__logo">
-      <picture>
-        <img class="page-header__logo-image" src="/src/assets/logo-mobile.png" width="33" height="38" alt="Логотип">
-      </picture>
-      <p class="page-header__logo-title"><b>CAT</b> ENERGY</p>
-    </a>
-    <nav class="main-nav main-nav--closed">
-      <button class="main-nav__button" type="button"></button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--active">
-            <a href="index.html">Главная</a>
-          </li>
-          <li class="site-list__item">
-            <a href="catalog.html">Каталог продукции</a>
-          </li>
-          <li class="site-list__item">
-            <a>Подбор программы</a>
-          </li>
-        </ul>
+    <div class="page-header__wrapper">
+      <div class="page-logo__wrapper">
+        <a href="#" class="page-header__logo">
+          <picture>
+            <source media="(min-width: 768px)" srcset="src/assets/logo-tablet.png">
+
+            <img class="page-header__logo-image" src="/src/assets/logo-mobile.png" width="33" height="38" alt="Логотип">
+          </picture>
+          <img src="./src/assets/logo-mobile-header.png" alt="Логотип сайта">
+        </a>
       </div>
-    </nav>
+      <nav class="main-nav main-nav--closed">
+        <button class="main-nav__button" type="button"></button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--active">
+              <a>Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a href="catalog.html">Каталог продукции</a>
+            </li>
+            <li class="site-list__item">
+              <a href="form.html">Подбор программы</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
   </header>
   <main class=" page-main">
     <div class="page-main__wrapper">

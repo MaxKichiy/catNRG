@@ -1,0 +1,113 @@
+.page-secondary {
+  width: 320px;
+  margin: 0 auto;
+}
+.page-secondary__wrapper {
+  width: 280px;
+  margin: 0 auto;
+}
+.page-secondary__title {
+  text-align: left;
+  font-size: 36px;
+  font-weight: normal;
+  line-height: 60px;
+}
+.page-secondary__catalog-more {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ededed;
+}
+.catalog__item {
+  width: 280px;
+  height: 210px;
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  border-top: 1px solid #ededed;
+  &:last-of-type {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ededed;
+  }
+}
+
+.catalog__item-image {
+  width: 140px;
+  height: 140px;
+}
+.catalog__item-description {
+  padding-top: 20px;
+  width: 140px;
+  height: 140px;
+  vertical-align: middle;
+  table {
+    font-size: 12px;
+    line-height: 16px;
+    font-family: 'Arial';
+    padding: 0;
+    margin: 0;
+    tbody {
+      tr {
+        padding: 0;
+        margin: 0;
+        width: 140px;
+        display: flex;
+        justify-content: space-between;
+        td {
+          padding: 0;
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+.catalog__item-text {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: bold;
+  width: 80px;
+  margin-bottom: 18px;
+}
+.catalog-more__title {
+  position: relative;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  font-weight: normal;
+  text-align: center;
+  margin-top: 80px;
+  color: #111111;
+  margin-bottom: 10px;
+  &::before {
+    content: '';
+    position: absolute;
+    top: -40px;
+    left: 125px;
+    width: 30px;
+    height: 2px;
+    background-color: #d3d3d3;
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    top: -40px;
+    left: 125px;
+    width: 30px;
+    height: 2px;
+    transform: rotate(-90deg);
+    background-color: #d3d3d3;
+  }
+}
+.catalog-more__text {
+  font-family: 'Arial';
+  font-size: 12px;
+  line-height: 16px;
+  color: #444444;
+  text-align: center;
+  margin-bottom: 22px;
+}
+.catalog-more__button {
+  font-size: 16px;
+  line-height: 20px;
+  background-color: #f2f2f2;
+  color: #444444;
+}
