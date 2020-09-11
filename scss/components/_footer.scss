@@ -91,6 +91,8 @@
   .page-footer__wrapper--top {
     width: 708px;
     background-color: #f2f2f2;
+    margin: 0 auto;
+    padding-bottom: 0;
   }
   .page-footer__title {
     width: 200px;
@@ -134,5 +136,24 @@
     .footer-map {
       width: auto;
     }
+  }
+}
+@media (min-width: $desktop-width) {
+  .page-footer {
+    position: relative;
+  }
+  .footer-map {
+    width: 100%;
+  }
+  .page-footer__wrapper--top {
+    position: absolute;
+    left: 300px;
+    top: 100px;
+    width: 570px;
+    background-color: #fff;
+  }
+  .page-footer__wrapper--bottom {
+    margin: 0 auto;
+    width: 1220px;
   }
 }

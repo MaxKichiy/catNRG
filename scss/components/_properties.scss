@@ -52,3 +52,10 @@
     line-height: 37px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .properties__item-text {
+    font-size: 14px;
+    line-height: 14px;
+  }
+}
