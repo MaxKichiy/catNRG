@@ -82,3 +82,15 @@
     }
   }
 }
+@media (min-width: $desktop-width) {
+  .site-list__item a {
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+  }
+  .site-list__item--active {
+    &::after {
+      background-color: #68b738;
+    }
+  }
+}

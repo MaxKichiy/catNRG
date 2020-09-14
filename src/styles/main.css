@@ -127,6 +127,13 @@ img {
     justify-content: space-between;
     z-index: -1; } }
 
+@media (min-width: 1220px) {
+  .page-header__wrapper {
+    width: 1220px; }
+  .page-header {
+    color: #000000;
+    background: none; } }
+
 .main-nav {
   width: 320px; }
 
@@ -187,6 +194,14 @@ img {
     color: #ffffff; }
   .site-list__item--active::after {
     background-color: #fff; } }
+
+@media (min-width: 1220px) {
+  .site-list__item a {
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000; }
+  .site-list__item--active::after {
+    background-color: #68b738; } }
 
 .page-main {
   width: 320px;
@@ -801,7 +816,8 @@ img {
 
 @media (min-width: 1220px) {
   .page-footer {
-    position: relative; }
+    position: relative;
+    margin-top: 50px; }
   .footer-map {
     width: 100%; }
   .page-footer__wrapper--top {
@@ -1002,6 +1018,21 @@ img {
     width: 260px;
     margin: 0 auto; } }
 
+@media (min-width: 1220px) {
+  .page-secondary__wrapper {
+    width: 1220px; }
+  .catalog__item {
+    width: 245px; }
+  .catalog__item-description {
+    width: 180px; }
+    .catalog__item-description table tbody tr {
+      width: 180px; }
+  .catalog-item__button {
+    width: 184px; }
+  .catalog-more__button {
+    width: 184px;
+    margin-top: 6px; } }
+
 .catalog-advance__wrapper {
   width: 280px;
   margin: 0 auto; }
@@ -1129,5 +1160,52 @@ img {
     margin-left: 250px;
     margin-top: 64px;
     right: 0; } }
+
+@media (min-width: 1220px) {
+  .catalog-advance__wrapper {
+    width: 1220px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+  .catalog-advance__title {
+    width: 100%;
+    margin: 60px 0;
+    padding: 0; }
+    .catalog-advance__title::after {
+      width: 820px; }
+  .catalog-advance__list {
+    margin-top: 0;
+    width: 895px; }
+  .advance__item {
+    padding: 0;
+    align-items: baseline; }
+  .advance__item-button {
+    width: 245px; }
+  .advance__item-title {
+    margin-top: 0; }
+  .advance__item-description {
+    margin-top: 0; }
+  .advance__item-price {
+    margin-top: 0; }
+  .advance__item-button {
+    margin: 14px 0; }
+  .catalog-advance__gift {
+    width: 245px;
+    height: 311px;
+    margin: 0;
+    background-image: url("../../src/assets/gift-photo-desktop.png");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    padding-bottom: 0; }
+    .catalog-advance__gift svg {
+      position: absolute;
+      top: 0;
+      left: -18px; }
+  .catalog-advance__gift-text {
+    color: #fff;
+    position: absolute;
+    top: 120px;
+    right: 37px;
+    text-align: center; } }
 
 /*# sourceMappingURL=main.css.map */

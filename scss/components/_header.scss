@@ -90,3 +90,13 @@
     z-index: -1;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .page-header__wrapper {
+    width: 1220px;
+  }
+  .page-header {
+    color: #000000;
+    background: none;
+  }
+}

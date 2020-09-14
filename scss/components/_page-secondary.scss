@@ -221,3 +221,29 @@
     margin: 0 auto;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .page-secondary__wrapper {
+    width: 1220px;
+  }
+  .catalog__item {
+    width: 245px;
+  }
+  .catalog__item-description {
+    width: 180px;
+    table {
+      tbody {
+        tr {
+          width: 180px;
+        }
+      }
+    }
+  }
+  .catalog-item__button {
+    width: 184px;
+  }
+  .catalog-more__button {
+    width: 184px;
+    margin-top: 6px;
+  }
+}
