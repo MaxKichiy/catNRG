@@ -1,3 +1,5 @@
+@import '../variables.scss';
+
 .catalog-advance__wrapper {
   width: 280px;
   margin: 0 auto;
@@ -89,4 +91,59 @@
   color: #ffffff;
   width: 170px;
   text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog-advance__wrapper {
+    width: 708px;
+  }
+  .catalog-advance__title {
+    font-size: 36px;
+    line-height: 36px;
+    margin-left: 35px;
+    border-bottom: none;
+    &::after {
+      width: 300px;
+      top: 24px;
+    }
+  }
+
+  .advance__item-title {
+    align-items: baseline;
+    font-size: 20px;
+    line-height: 20px;
+    width: 190px;
+  }
+  .advance__item {
+    padding: 25px 35px;
+    border: 1px solid #d9d9d9;
+    border-bottom: none;
+    &:last-of-type {
+      border-bottom: 1px solid #d9d9d9;
+    }
+  }
+  .advance__item-description {
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 15px;
+  }
+  .advance__item-price {
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 15px;
+  }
+  .catalog-advance__gift {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url('../../src/assets/gift-photo-tablet.png');
+    margin: 70px 0;
+  }
+  .catalog-advance__gift-text {
+    text-align: left;
+    margin-left: 250px;
+    margin-top: 64px;
+    right: 0;
+  }
 }
