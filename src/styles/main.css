@@ -115,7 +115,11 @@ img {
   .page-header__logo > img {
     display: none; }
   .page-header__logo-image {
-    width: 173px; } }
+    width: 173px; }
+    .page-header__logo-image:hover {
+      opacity: 0.8; }
+    .page-header__logo-image:active {
+      opacity: 0.6; } }
 
 @media (min-width: 1220px) {
   .page-header {
@@ -152,6 +156,10 @@ img {
   border-bottom: 1px solid #e6e6e6;
   border-left: none;
   border-right: none; }
+  .site-list__item:hover {
+    opacity: 0.6; }
+  .site-list__item:active {
+    opacity: 0.3; }
   .site-list__item:first-of-type {
     border-top: 1px solid #e6e6e6; }
   .site-list__item a {
@@ -271,7 +279,7 @@ img {
   font-size: 16px;
   padding: 10px 0;
   position: relative;
-  color: #000;
+  color: #111111;
   margin-left: 20px;
   text-transform: uppercase;
   text-decoration: none; }
@@ -342,16 +350,28 @@ img {
     order: 1;
     align-self: flex-start;
     border: none; }
-  .program-example__link {
-    order: 3; }
   .program-example__arrow {
     order: 3; }
   .program-example__link {
+    order: 3;
     font-size: 20px;
     line-height: 20px;
     margin-left: 0; }
+    .program-example__link:hover .program-example__arrow {
+      width: 40px; }
+  .program-example__link:hover ~ .program-example__arrow {
+    width: 40px; }
+  .program-example__link:active ~ .program-example__arrow {
+    opacity: 0.3; }
+  .program-example__link:active {
+    opacity: 0.3; }
   .program-example__arrow {
-    height: 30px; } }
+    cursor: pointer;
+    height: 30px; }
+    .program-example__arrow path {
+      fill: #3e4242; }
+    .program-example__arrow:hover {
+      width: 40px; } }
 
 @media (min-width: 1220px) {
   .page-main {
@@ -402,6 +422,16 @@ img {
   background-color: #68b738;
   border: none;
   cursor: pointer; }
+  .button:hover {
+    background-color: #5eaa2f; }
+  .button:active {
+    color: #8fc46e; }
+
+.button--grey:hover {
+  background-color: #ebebeb; }
+
+.button--grey:active {
+  color: #b9b9b9; }
 
 .faq-page {
   width: 320px;
@@ -566,11 +596,20 @@ img {
     line-height: 24px; }
   .example-page__properties {
     width: 384px; }
+  .picture-toggle--before {
+    order: 0; }
+  .picture-toggle--after {
+    order: 1; }
   .picture-toggle {
     font-size: 20px;
     line-height: 20px;
     padding-bottom: 5px;
-    border-bottom: dotted 1px #bebebe; }
+    border-bottom: 1px dotted #bebebe;
+    cursor: pointer; }
+    .picture-toggle:hover {
+      border-bottom: 1px solid #989898; }
+    .picture-toggle:active {
+      border-bottom: 1px solid #ffffff; }
   .example-page__slogan {
     position: absolute;
     top: 200px;
@@ -589,11 +628,20 @@ img {
   .example-page__picture-toggles {
     width: auto; }
     .example-page__picture-toggles .picture-toggles__field {
+      order: 1;
       width: 444px;
       height: 6px;
       background-color: #dcdcdc;
       border: none;
       margin: 0 20px; }
+      .example-page__picture-toggles .picture-toggles__field:hover ~ .picture-toggle {
+        border-bottom: 1px solid #fff; }
+      .example-page__picture-toggles .picture-toggles__field:hover:before {
+        box-shadow: 0 3px 10px #bebebe; }
+      .example-page__picture-toggles .picture-toggles__field:active ~ .picture-toggle {
+        border-bottom: 1px solid #989898; }
+      .example-page__picture-toggles .picture-toggles__field:active:before {
+        border: 2px solid #68b738; }
       .example-page__picture-toggles .picture-toggles__field::before {
         left: 50%;
         top: -220%;
@@ -602,7 +650,9 @@ img {
         margin-left: -17px;
         border-radius: 50%;
         background-color: #fff;
-        border: 1px solid #d2d2d2; }
+        border: 1px solid #d2d2d2;
+        box-shadow: 0 3px 10px #d7d7d7;
+        cursor: pointer; }
       .example-page__picture-toggles .picture-toggles__field:after {
         content: '';
         position: absolute;
@@ -757,7 +807,21 @@ img {
   fill: #666666; }
   .social__list-link svg path:last-of-type {
     stroke: #666666;
+    fill: transparent; }
+
+.social__list-link:hover svg path {
+  fill: #68b738; }
+  .social__list-link:hover svg path:last-of-type {
+    stroke: #68b738;
     fill: #fff; }
+
+.social__list-link:active {
+  opacity: 0.3; }
+  .social__list-link:active svg path {
+    fill: #68b738; }
+    .social__list-link:active svg path:last-of-type {
+      stroke: #68b738;
+      fill: #fff; }
 
 .footer__title--bottom {
   border-top: 1px solid #d9d9d9;
@@ -800,6 +864,12 @@ img {
   .page-footer__logo {
     padding: 30px 0;
     width: auto; }
+    .page-footer__logo img {
+      cursor: pointer; }
+      .page-footer__logo img:hover {
+        opacity: 0.8; }
+      .page-footer__logo img:active {
+        opacity: 0.6; }
   .page-footer__socials {
     margin-top: 20px;
     padding: 30px 0; }
@@ -1230,6 +1300,7 @@ img {
   margin-bottom: 20px; }
 
 .page-third__form label {
+  color: #222222;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase; }
@@ -1250,6 +1321,18 @@ img {
     .form__third-input input[type='text'] {
       font-family: 'Oswald';
       padding-left: 15px; }
+
+.text-input:hover {
+  border: 1px solid #cfcfcf; }
+
+.text-input:focus {
+  border: 2px solid #444444; }
+
+.text-input--error {
+  border: 2px solid #ff8282; }
+
+.text-input--error + svg path {
+  fill: #ff8282; }
 
 .form-third {
   border-bottom: 1px solid #ededed; }
@@ -1275,6 +1358,18 @@ img {
   position: relative;
   cursor: pointer;
   margin-left: 40px; }
+  .form__radio-input input + label:active {
+    opacity: 0.3; }
+  .form__radio-input input + label:hover::after {
+    content: '';
+    background-color: #68b738;
+    position: absolute;
+    margin-right: 20px;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    left: -48px;
+    top: 6px; }
   .form__radio-input input + label::before {
     content: '';
     width: 30px;
@@ -1386,6 +1481,8 @@ img {
   flex-wrap: wrap;
   align-items: center;
   margin-top: 25px; }
+  .form__addition-input:active {
+    opacity: 0.3; }
   .form__addition-input input {
     display: none; }
 
@@ -1396,6 +1493,17 @@ img {
   position: relative;
   cursor: pointer;
   padding-left: 50px; }
+  .form__addition input + label:hover::after {
+    position: absolute;
+    content: '';
+    top: -4px;
+    left: 5px;
+    border: 3px solid #68b738;
+    border-right: none;
+    border-top: none;
+    width: 19px;
+    height: 14px;
+    transform: rotate(-45deg); }
   .form__addition input + label::before {
     position: absolute;
     content: '';
@@ -1485,11 +1593,17 @@ img {
       width: 110px;
       top: 20px; }
   .form__contact-input {
+    position: relative;
     margin-left: 40px;
     margin-right: 35px; }
+    .form__contact-input svg {
+      position: absolute;
+      right: 20px; }
     .form__contact-input label {
       font-size: 20px;
       line-height: 20px; }
+    .form__contact-input:focus-within svg path {
+      fill: #68b738; }
     .form__contact-input::placeholder {
       text-transform: uppercase;
       font-size: 20px;

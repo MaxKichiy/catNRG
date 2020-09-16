@@ -9,4 +9,18 @@
   background-color: #68b738;
   border: none;
   cursor: pointer;
+  &:hover {
+    background-color: #5eaa2f;
+  }
+  &:active {
+    color: #8fc46e;
+  }
+}
+.button--grey {
+  &:hover {
+    background-color: #ebebeb;
+  }
+  &:active {
+    color: #b9b9b9;
+  }
 }

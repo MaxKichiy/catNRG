@@ -23,6 +23,7 @@
 }
 .page-third__form {
   label {
+    color: #222222;
     font-size: 16px;
     line-height: 18px;
     text-transform: uppercase;
@@ -44,6 +45,23 @@
     &[type='text'] {
       font-family: 'Oswald';
       padding-left: 15px;
+    }
+  }
+}
+
+.text-input {
+  &:hover {
+    border: 1px solid #cfcfcf;
+  }
+  &:focus {
+    border: 2px solid #444444;
+  }
+  &--error {
+    border: 2px solid #ff8282;
+  }
+  &--error + svg {
+    path {
+      fill: #ff8282;
     }
   }
 }
@@ -72,6 +90,23 @@
   position: relative;
   cursor: pointer;
   margin-left: 40px;
+
+  &:active {
+    opacity: 0.3;
+  }
+  &:hover {
+    &::after {
+      content: '';
+      background-color: #68b738;
+      position: absolute;
+      margin-right: 20px;
+      border-radius: 50%;
+      width: 18px;
+      height: 18px;
+      left: -48px;
+      top: 6px;
+    }
+  }
   &::before {
     content: '';
     width: 30px;
@@ -196,6 +231,10 @@
   flex-wrap: wrap;
   align-items: center;
   margin-top: 25px;
+
+  &:active {
+    opacity: 0.3;
+  }
   input {
     display: none;
   }
@@ -207,6 +246,20 @@
   position: relative;
   cursor: pointer;
   padding-left: 50px;
+  &:hover {
+    &::after {
+      position: absolute;
+      content: '';
+      top: -4px;
+      left: 5px;
+      border: 3px solid #68b738;
+      border-right: none;
+      border-top: none;
+      width: 19px;
+      height: 14px;
+      transform: rotate(-45deg);
+    }
+  }
   &::before {
     position: absolute;
     content: '';
@@ -263,6 +316,7 @@
     margin-left: 40px;
     margin-bottom: 65px;
   }
+
   .form-third {
     margin-left: 40px;
     border: none;
@@ -319,11 +373,23 @@
     }
   }
   .form__contact-input {
+    position: relative;
     margin-left: 40px;
     margin-right: 35px;
+    svg {
+      position: absolute;
+      right: 20px;
+    }
     label {
       font-size: 20px;
       line-height: 20px;
+    }
+    &:focus-within {
+      svg {
+        path {
+          fill: #68b738;
+        }
+      }
     }
     &::placeholder {
       text-transform: uppercase;

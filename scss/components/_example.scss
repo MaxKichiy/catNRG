@@ -89,11 +89,24 @@
   .example-page__properties {
     width: 384px;
   }
+  .picture-toggle--before {
+    order: 0;
+  }
+  .picture-toggle--after {
+    order: 1;
+  }
   .picture-toggle {
     font-size: 20px;
     line-height: 20px;
     padding-bottom: 5px;
-    border-bottom: dotted 1px #bebebe;
+    border-bottom: 1px dotted #bebebe;
+    cursor: pointer;
+    &:hover {
+      border-bottom: 1px solid #989898;
+    }
+    &:active {
+      border-bottom: 1px solid #ffffff;
+    }
   }
   .example-page__slogan {
     position: absolute;
@@ -116,11 +129,29 @@
   .example-page__picture-toggles {
     width: auto;
     .picture-toggles__field {
+      order: 1;
       width: 444px;
       height: 6px;
       background-color: #dcdcdc;
       border: none;
       margin: 0 20px;
+      &:hover {
+        & ~ .picture-toggle {
+          border-bottom: 1px solid #fff;
+        }
+        &:before {
+          box-shadow: 0 3px 10px #bebebe;
+        }
+      }
+      &:active {
+        & ~ .picture-toggle {
+          border-bottom: 1px solid #989898;
+        }
+        &:before {
+          border: 2px solid #68b738;
+        }
+      }
+
       &::before {
         left: 50%;
         top: -220%;
@@ -130,6 +161,8 @@
         border-radius: 50%;
         background-color: #fff;
         border: 1px solid #d2d2d2;
+        box-shadow: 0 3px 10px #d7d7d7;
+        cursor: pointer;
       }
       &:after {
         content: '';

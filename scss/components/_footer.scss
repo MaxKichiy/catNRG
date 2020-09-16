@@ -66,9 +66,32 @@
       fill: #666666;
       &:last-of-type {
         stroke: #666666;
-        fill: #fff;
+        fill: transparent;
       }
     }
+  }
+  &:hover {
+    svg {
+      path {
+        fill: #68b738;
+        &:last-of-type {
+          stroke: #68b738;
+          fill: #fff;
+        }
+      }
+    }
+  }
+  &:active {
+    svg {
+      path {
+        fill: #68b738;
+        &:last-of-type {
+          stroke: #68b738;
+          fill: #fff;
+        }
+      }
+    }
+    opacity: 0.3;
   }
 }
 .footer__title--bottom {
@@ -119,6 +142,15 @@
   .page-footer__logo {
     padding: 30px 0;
     width: auto;
+    img {
+      cursor: pointer;
+      &:hover {
+        opacity: 0.8;
+      }
+      &:active {
+        opacity: 0.6;
+      }
+    }
   }
   .page-footer__socials {
     margin-top: 20px;

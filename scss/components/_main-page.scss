@@ -75,7 +75,7 @@
   font-size: 16px;
   padding: 10px 0;
   position: relative;
-  color: #000;
+  color: #111111;
   margin-left: 20px;
   text-transform: uppercase;
   text-decoration: none;
@@ -159,19 +159,38 @@
     align-self: flex-start;
     border: none;
   }
-  .program-example__link {
-    order: 3;
-  }
   .program-example__arrow {
     order: 3;
   }
   .program-example__link {
+    order: 3;
     font-size: 20px;
     line-height: 20px;
     margin-left: 0;
+    &:hover {
+      .program-example__arrow {
+        width: 40px;
+      }
+    }
+  }
+  .program-example__link:hover ~ .program-example__arrow {
+    width: 40px;
+  }
+  .program-example__link:active ~ .program-example__arrow {
+    opacity: 0.3;
+  }
+  .program-example__link:active {
+    opacity: 0.3;
   }
   .program-example__arrow {
+    cursor: pointer;
     height: 30px;
+    path {
+      fill: #3e4242;
+    }
+    &:hover {
+      width: 40px;
+    }
   }
 }
 @media (min-width: $desktop-width) {
